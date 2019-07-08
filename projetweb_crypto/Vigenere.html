@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">	
+
+<head>
+	<meta charset="UTF-8" />
+	<title>César</title>
+	<link rel="stylesheet" href="acceuil.css" type="text/css" />
+</head>
+
+<body>
+	<header>
+          <h1 id ="titre">Chiffre de Vigenère</h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Cesar.html">Chiffre de CESAR</a></li>
+                <li><a href="Vigenere.html">Chiffre de VIGENERE</a></li>
+              </ul>
+            </nav>    
+    </header>
+    	
+    <aside id ="sidebar">
+        <ul>
+             <li><a href="Sources.html">Sources</a></li>
+            <li><a href="Musique.html">Musique</a></li>
+            <li><a href="#">Lien 3</a></li>
+        </ul>
+      </aside>
+    <main id="vigenere">
+    	<h2>Qu'est-ce que le chiffre de Vigenère ?</h2>
+    	<p>Le chiffre de Vigenère est une "amélioration" du chiffre de César. En effet, au lieu d'avoir une simple clef numérique, la clef est un mot.</p> 
+    	<p>On peut par exemple utiliser la clef <span class="gras">VELO</span>, on décalera alors cycliquement de 21 (V), puis de 4 (E), puis de 11 (L) et enfin de 14 (O).
+    	</p>
+    	<p>Exemple </p>
+		<h2>Chiffrer un message en choisissant une clef</h2>
+		<span> Clef à utiliser : </span>
+        <br>
+    	<textarea rows="3" placeholder="Ecrivez votre mot clef" id="clef" ></textarea>
+		<br>
+        <span>Texte à traduire : </span>
+        <br>
+		<textarea rows="3" placeholder="Ecrivez votre texte" id="texte_vigenere" ></textarea>
+        <br>
+		<button onclick="mes_crypte()">Traduire</button>
+		<pre id="trad_vigenere"></pre>
+		<script src="Vigenere.js"></script>
+        <br>
+	</main>
+
+</body>
+</html>
